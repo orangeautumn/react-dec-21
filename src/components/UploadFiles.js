@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import {
   UPLOAD_ACCEPT_FILE_TYPE,
   UploadFileComponent,

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export const UPLOAD_ACCEPT_FILE_TYPE = {
   PDF: "application/pdf",

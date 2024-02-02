@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import DisplayUsers from "./components/displayUsers";
 import DisplayNotifications from "./components/DisplayNotifications";
