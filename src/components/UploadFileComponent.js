@@ -1,4 +1,6 @@
+import React from "react";
 import { useRef } from "react";
+import PropTypes from "prop-types";
 
 export const UPLOAD_ACCEPT_FILE_TYPE = {
   PDF: "application/pdf",
@@ -11,7 +13,7 @@ export const UploadFileComponent = ({
 }) => {
   const inputRef = useRef(null);
 
-  const uploadSingleFile = (event) => {
+  const uploadSingleFile = () => {
     inputRef.current.click();
   };
   return (
@@ -29,4 +31,11 @@ export const UploadFileComponent = ({
       />
     </div>
   );
+};
+
+UploadFileComponent.propTypes = {
+  buttonLabel: PropTypes.string,
+  handleChange: PropTypes.func,
+  multiple: PropTypes.bool,
+  allowedFileTypes: PropTypes.string,
 };

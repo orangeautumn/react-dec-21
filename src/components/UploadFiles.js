@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import {
   UPLOAD_ACCEPT_FILE_TYPE,
@@ -54,7 +55,7 @@ export const UploadFiles = () => {
         <br />
         {multipleFiles.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               {item.name} {"    "}
               <button
                 onClick={() => {

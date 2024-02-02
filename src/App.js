@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import DisplayUsers from "./components/displayUsers";
 import DisplayNotifications from "./components/DisplayNotifications";
